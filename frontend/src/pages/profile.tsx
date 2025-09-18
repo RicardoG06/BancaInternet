@@ -27,6 +27,7 @@ import {
   Mail, 
   Shield, 
   CreditCard,
+  Settings,
   Save,
   Loader2,
   CheckCircle,
