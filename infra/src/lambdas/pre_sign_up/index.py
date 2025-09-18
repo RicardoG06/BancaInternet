@@ -1,4 +1,4 @@
-def handler(event, context):
+def lambda_handler(event, context):
     """
     Lambda trigger de Cognito para pre-signup
     Auto-confirma usuarios y verifica email automáticamente

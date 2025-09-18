@@ -10,7 +10,7 @@ USER_TABLE = os.environ["USERS_TABLE_NAME"]
 ACCOUNTS_TABLE = os.environ.get("ACCOUNTS_TABLE_NAME", "banca-accounts-dev-dev")
 TRANSACTIONS_TABLE = os.environ.get("TRANSACTIONS_TABLE_NAME", "banca-transactions-dev-dev")
 
-def handler(event, context):
+def lambda_handler(event, context):
     """
     Lambda trigger de Cognito para post-confirmation
     Crea un perfil de usuario en DynamoDB después de la confirmación
