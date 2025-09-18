@@ -27,7 +27,6 @@ import {
   Mail, 
   Shield, 
   CreditCard,
-  Settings,
   Save,
   Loader2,
   CheckCircle,
@@ -100,10 +99,6 @@ export function ProfilePage() {
     }
   }
 
-  const handleEdit = () => {
-    setIsEditing(true)
-    // En una implementación real, aquí se cargarían los datos del usuario
-  }
 
   const handleCancel = () => {
     setIsEditing(false)
@@ -322,10 +317,6 @@ export function ProfilePage() {
                       </p>
                     </div>
                   </div>
-                  <Button onClick={handleEdit} className="mt-4">
-                    <Settings className="mr-2 h-4 w-4" />
-                    Editar Perfil
-                  </Button>
                 </div>
               ) : (
                 <div className="text-center py-8">

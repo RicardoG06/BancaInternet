@@ -1,4 +1,4 @@
-import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query'
+import { useQuery, useQueryClient } from '@tanstack/react-query'
 import { Link } from 'react-router-dom'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
@@ -16,7 +16,6 @@ import {
   Plus,
   Eye,
   RefreshCw,
-  Database
 } from 'lucide-react'
 import { toast } from 'sonner'
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts'
@@ -34,20 +33,6 @@ export function DashboardPage() {
     },
   })
 
-  // Mutación para cargar datos de ejemplo adicionales
-  const seedDataMutation = useMutation({
-    mutationFn: async () => {
-      return await apiService.createSeedData();
-    },
-    onSuccess: () => {
-      toast.success('Datos de ejemplo cargados exitosamente');
-      queryClient.invalidateQueries({ queryKey: ['accounts'] });
-      queryClient.invalidateQueries({ queryKey: ['transactions'] });
-    },
-    onError: (error: any) => {
-      toast.error(error.message || 'Error al cargar datos de ejemplo');
-    },
-  })
 
   const accounts = accountsData?.accounts || []
 
@@ -119,19 +104,6 @@ export function DashboardPage() {
           >
             <RefreshCw className="h-4 w-4 mr-2" />
             Actualizar
-          </Button>
-          <Button
-            variant="default"
-            size="sm"
-            onClick={() => seedDataMutation.mutate()}
-            disabled={seedDataMutation.isPending}
-          >
-            {seedDataMutation.isPending ? (
-              <RefreshCw className="h-4 w-4 mr-2 animate-spin" />
-            ) : (
-              <Database className="h-4 w-4 mr-2" />
-            )}
-            Cargar Datos Demo
           </Button>
         </div>
         <div className="flex space-x-3">
