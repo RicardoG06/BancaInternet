@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { BancaInternetConfig, getConfig } from '../config/config-env';
+import { BancaInternetConfig, getConfig } from '@/config/config-env';
 
 interface AppInitializationState {
   isInitialized: boolean;

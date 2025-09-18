@@ -1,4 +1,4 @@
-import { BancaInternetConfig } from '../config/config-env';
+import { BancaInternetConfig } from '@/config/config-env';
 import { cognitoAuth } from './cognitoService';
 
 export class ApiService {
