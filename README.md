@@ -212,9 +212,6 @@ BancaInternet/
 │   │   └── prod.json          # Config prod
 │   ├── .env                   # Variables de entorno backend
 │   └── package.json           # Dependencias CDK
-├── scripts/                   # Scripts de despliegue
-│   ├── deploy-backend.sh      # Desplegar infraestructura
-│   └── dev-frontend.sh        # Iniciar frontend
 ├── .gitignore                 # Archivos a ignorar
 └── README.md                  # Este archivo
 ```
