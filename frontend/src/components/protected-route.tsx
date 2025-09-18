@@ -1,5 +1,5 @@
 import { Navigate, useLocation } from 'react-router-dom'
-import { useAuthStore } from '@/lib/stores/authStore'
+import { useAuthStore } from '@/lib/stores'
 import { Loader2 } from 'lucide-react'
 
 interface ProtectedRouteProps {

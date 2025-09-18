@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom'
-import { useAuthStore } from '@/lib/stores/authStore'
+import { useAuthStore } from '@/lib/stores'
 import { useTheme } from '@/components/theme-provider'
 import { Button } from '@/components/ui/button'
 import { 

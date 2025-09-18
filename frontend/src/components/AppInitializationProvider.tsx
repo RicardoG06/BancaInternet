@@ -1,7 +1,7 @@
 import { createContext, useContext, ReactNode, useEffect } from 'react';
 import { useAppInitialization } from '@/hooks/useAppInitialization';
 import { BancaInternetConfig } from '@/config/config-env';
-import { useAuthStore } from '@/lib/stores/authStore';
+import { useAuthStore } from '@/lib/stores';
 import { initializeApiService } from '@/services/apiService';
 
 interface AppContextType {

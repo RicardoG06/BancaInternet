@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Navigate, useLocation } from 'react-router-dom'
-import { useAuthStore } from '@/lib/stores/authStore'
+import { useAuthStore } from '@/lib/stores'
 import { LoginForm } from '@/features/auth/components/LoginForm'
 import { RegisterForm } from '@/features/auth/components/RegisterForm'
 import { Building2 } from 'lucide-react'
