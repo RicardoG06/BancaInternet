@@ -1,0 +1,22 @@
+{
+  "name": "banca-internet-demo",
+  "version": "1.0.0",
+  "description": "Demo funcional de Banca por Internet con AWS CDK y React",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "infra"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=frontend",
+    "build": "npm run build --workspace=frontend",
+    "deploy": "npm run deploy --workspace=infra",
+    "destroy": "npm run destroy --workspace=infra",
+    "bootstrap": "npm run bootstrap --workspace=infra",
+    "seed": "npm run seed --workspace=infra"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}

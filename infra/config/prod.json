@@ -1,0 +1,37 @@
+{
+  "environment": "prod",
+  "projectName": "banca-internet",
+  "region": "us-east-1",
+  "cognito": {
+    "domainPrefix": "banca-internet-prod",
+    "emailFrom": "noreply@bancainternet.com",
+    "mfaEnabled": true
+  },
+  "api": {
+    "stage": "prod",
+    "description": "Banca por Internet API - Production",
+    "corsOrigins": [
+      "https://bancainternet.com",
+      "https://www.bancainternet.com"
+    ]
+  },
+  "dynamodb": {
+    "accountsTableName": "banca-accounts-prod",
+    "transactionsTableName": "banca-transactions-prod",
+    "idempotencyTableName": "banca-idempotency-prod"
+  },
+  "transfers": {
+    "dailyLimit": 500,
+    "minAmount": 0.01,
+    "maxAmount": 500
+  },
+  "monitoring": {
+    "logRetentionDays": 90,
+    "alarmThresholdErrors": 5,
+    "alarmThresholdLatency": 1000
+  },
+  "frontend": {
+    "url": "https://bancainternet.com",
+    "domain": "bancainternet.com"
+  }
+}

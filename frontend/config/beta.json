@@ -1,0 +1,31 @@
+{
+  "environment": "beta",
+  "apiBaseUrl": "https://api-beta.bancainternet.com",
+  "region": "us-east-1",
+  "cognito": {
+    "userPoolId": "",
+    "userPoolClientId": "",
+    "domain": "",
+    "identityPoolId": ""
+  },
+  "app": {
+    "name": "Banca por Internet - Beta",
+    "version": "1.0.0-beta",
+    "description": "Aplicación de banca por internet - Beta"
+  },
+  "features": {
+    "mfaEnabled": true,
+    "darkModeEnabled": true,
+    "notificationsEnabled": true
+  },
+  "transfers": {
+    "dailyLimit": 250,
+    "minAmount": 0.01,
+    "maxAmount": 250
+  },
+  "ui": {
+    "theme": "system",
+    "language": "es",
+    "currency": "USD"
+  }
+}

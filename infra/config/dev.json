@@ -1,0 +1,38 @@
+{
+  "environment": "dev",
+  "projectName": "banca-internet",
+  "region": "us-east-1",
+  "cognito": {
+    "domainPrefix": "banca-internet-dev",
+    "emailFrom": "noreply-dev@bancainternet.com",
+    "mfaEnabled": false
+  },
+  "api": {
+    "stage": "dev",
+    "description": "Banca por Internet API - Development",
+    "corsOrigins": [
+      "http://localhost:5173",
+      "https://localhost:5173",
+      "http://localhost:3000"
+    ]
+  },
+  "dynamodb": {
+    "accountsTableName": "banca-accounts-dev",
+    "transactionsTableName": "banca-transactions-dev",
+    "idempotencyTableName": "banca-idempotency-dev"
+  },
+  "transfers": {
+    "dailyLimit": 100,
+    "minAmount": 0.01,
+    "maxAmount": 100
+  },
+  "monitoring": {
+    "logRetentionDays": 7,
+    "alarmThresholdErrors": 20,
+    "alarmThresholdLatency": 5000
+  },
+  "frontend": {
+    "url": "http://localhost:5173",
+    "domain": "localhost:5173"
+  }
+}

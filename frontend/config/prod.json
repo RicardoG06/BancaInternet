@@ -1,0 +1,31 @@
+{
+  "environment": "prod",
+  "apiBaseUrl": "https://api.bancainternet.com",
+  "region": "us-east-1",
+  "cognito": {
+    "userPoolId": "",
+    "userPoolClientId": "",
+    "domain": "",
+    "identityPoolId": ""
+  },
+  "app": {
+    "name": "Banca por Internet",
+    "version": "1.0.0",
+    "description": "Aplicación de banca por internet"
+  },
+  "features": {
+    "mfaEnabled": true,
+    "darkModeEnabled": true,
+    "notificationsEnabled": true
+  },
+  "transfers": {
+    "dailyLimit": 500,
+    "minAmount": 0.01,
+    "maxAmount": 500
+  },
+  "ui": {
+    "theme": "system",
+    "language": "es",
+    "currency": "USD"
+  }
+}

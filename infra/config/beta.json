@@ -1,0 +1,37 @@
+{
+  "environment": "beta",
+  "projectName": "banca-internet",
+  "region": "us-east-1",
+  "cognito": {
+    "domainPrefix": "banca-internet-beta",
+    "emailFrom": "noreply-beta@bancainternet.com",
+    "mfaEnabled": true
+  },
+  "api": {
+    "stage": "beta",
+    "description": "Banca por Internet API - Beta",
+    "corsOrigins": [
+      "https://beta.bancainternet.com",
+      "https://staging.bancainternet.com"
+    ]
+  },
+  "dynamodb": {
+    "accountsTableName": "banca-accounts-beta",
+    "transactionsTableName": "banca-transactions-beta",
+    "idempotencyTableName": "banca-idempotency-beta"
+  },
+  "transfers": {
+    "dailyLimit": 250,
+    "minAmount": 0.01,
+    "maxAmount": 250
+  },
+  "monitoring": {
+    "logRetentionDays": 30,
+    "alarmThresholdErrors": 10,
+    "alarmThresholdLatency": 3000
+  },
+  "frontend": {
+    "url": "https://beta.bancainternet.com",
+    "domain": "beta.bancainternet.com"
+  }
+}

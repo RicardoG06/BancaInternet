@@ -1,0 +1,31 @@
+{
+  "environment": "dev",
+  "apiBaseUrl": "http://localhost:3000/api",
+  "region": "us-east-1",
+  "cognito": {
+    "userPoolId": "",
+    "userPoolClientId": "",
+    "domain": "",
+    "identityPoolId": ""
+  },
+  "app": {
+    "name": "Banca por Internet - Dev",
+    "version": "1.0.0-dev",
+    "description": "Aplicación de banca por internet - Desarrollo"
+  },
+  "features": {
+    "mfaEnabled": false,
+    "darkModeEnabled": true,
+    "notificationsEnabled": true
+  },
+  "transfers": {
+    "dailyLimit": 100,
+    "minAmount": 0.01,
+    "maxAmount": 100
+  },
+  "ui": {
+    "theme": "system",
+    "language": "es",
+    "currency": "USD"
+  }
+}
