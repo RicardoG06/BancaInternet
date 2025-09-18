@@ -27,6 +27,5 @@
     }
   },
   "include": ["src", "src/vite-env.d.ts"],
-  "exclude": ["vite.config.ts"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "exclude": ["vite.config.ts"]
 }

@@ -128,7 +128,7 @@ export function LoginPage() {
 
         {/* Footer */}
         <div className="mt-8 text-center text-sm text-gray-500 dark:text-gray-400">
-          <p>© 2024 Banca por Internet. Todos los derechos reservados.</p>
+          <p>© 2025 Banca por Internet. Todos los derechos reservados.</p>
         </div>
       </div>
     </div>
